@@ -11,10 +11,10 @@ service MessageService {
 
 message MessageRequest {
   string message = 1;
-  int32 number = 2;
+//  int32 number = 2;
 }
 
 message MessageResponse {
   string reply = 1;
-  int32 number = 2;
+//  int32 number = 2;
 }

@@ -16,13 +16,13 @@ public class GrpcClient {
 
         MessageRequest request = MessageRequest.newBuilder()
                 .setMessage("Hello from Java client")
-                .setNumber(5)
+//                .setNumber(5)
                 .build();
 
         MessageResponse response = stub.sendMessage(request);
 
         System.out.println("Response from server: " + response.getReply());
-        System.out.println(response.getNumber());
+//        System.out.println(response.getNumber());
         channel.shutdown();
     }
 }

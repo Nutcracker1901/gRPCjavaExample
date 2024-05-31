@@ -23,14 +23,14 @@ public class GrpcServer {
         @Override
         public void sendMessage(MessageRequest request, StreamObserver<MessageResponse> responseObserver) {
             String message = "Ответ сервера";
-            int number = request.getNumber();
-            number *= number;
+//            int number = request.getNumber();
+//            number *= number;
             System.out.println("Message received: " + message);
             String reply = "Java server Received: " + message;
 
             MessageResponse response = MessageResponse.newBuilder()
                     .setReply(reply)
-                    .setNumber(number)
+//                    .setNumber(number)
                     .build();
 
             responseObserver.onNext(response);
