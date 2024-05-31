@@ -1,5 +1,7 @@
 # Протокол gRPC
 
+Для работы приложения надо выполнить maven compile
+
 ## Введение
 
 gRPC (gRPC Remote Procedure Calls) — это современный, высокопроизводительный RPC (Remote Procedure Call) фреймворк,
